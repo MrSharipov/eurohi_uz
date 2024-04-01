@@ -20,6 +20,8 @@ export default defineNuxtConfig({
     },
   ],
   modules: [
+    'nuxt-primevue',
+    '@pinia/nuxt',
     // ['@nuxtjs/i18n', {
     //   locales: [
     //     { code: 'uz', file: 'uz.json'},
@@ -34,6 +36,7 @@ export default defineNuxtConfig({
     // }],
   ],
   css: [
+    'primevue/resources/themes/aura-light-purple/theme.css',
     "@flaticon/flaticon-uicons/css/regular/rounded.css",
     "@flaticon/flaticon-uicons/css/solid/rounded.css",
     '~/assets/stylus/app.styl'
@@ -49,5 +52,18 @@ export default defineNuxtConfig({
         // { rel: 'stylesheet', href: '/css/bootstrap-grid.min.css' }
       ],
     },
+  },
+  primevue: {
+    options: {
+      ripple: false,
+      inputStyle: 'filled',
+    },
+    components: {
+      include: []
+    }
+    /*directives: {
+      prefix: 'p',
+      include: ['Ripple', 'Tooltip']    /!* Used as v-pripple and v-ptooltip *!/
+    }*/
   },
 })

@@ -7,11 +7,11 @@
 <script setup lang="ts">
 import {useSeoMeta} from "#imports";
 
-const desc = 'PFL.UZ';
+const desc = 'EuroHI.UZ';
 
 useSeoMeta({
-  title: 'PFL.UZ',
-  ogTitle: 'PFL.UZ',
+  title: 'EuroHI.UZ',
+  ogTitle: 'EuroHI.UZ',
   description: desc,
   ogDescription: desc,
   ogImage: '',

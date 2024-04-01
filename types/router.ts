@@ -1,4 +1,8 @@
 export enum ROUTES {
   HOME = 'HOME',
-  REGISTER='REGISTER'
+  MATERIALS = 'MATERIALS',
+  NEWS ='NEWS',
+  ABOUT = 'ABOUT',
+  REGISTER = 'REGISTER',
+  LOGIN = 'LOGIN'
 }

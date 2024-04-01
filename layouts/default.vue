@@ -1,7 +1,7 @@
 <template>
   <div class="app app-layout-default">
     <div class="app-main">
-<!--      <the-header/>-->
+      <the-nav/>
       <slot />
 <!--      <the-footer/>-->
     </div>
