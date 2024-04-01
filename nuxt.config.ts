@@ -6,7 +6,6 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      API_URL: process.env.NUXT_API_URL,
       DEFAULT_LANGUAGE: 'uz',
       LANGUAGES: [
         {code: 'uz', title: 'O`zbek', default: true},
