@@ -3,8 +3,10 @@
     <div class="app-main">
       <the-nav/>
       <slot />
-<!--      <the-footer/>-->
+      <the-footer/>
     </div>
   </div>
 </template>
 
+<script setup lang="ts">
+</script>
