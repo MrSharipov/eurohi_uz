@@ -1,0 +1,60 @@
+.row {
+  display: grid
+  width: 100%
+  grid-template-columns: repeat(24, 1fr)
+  gap: 24px
+  box-sizing: border-box
+}
+for n in 1..24 {
+  .col-{n} {
+    grid-column: "span %s" % (n)
+    min-width: 0
+    max-width: 100%
+    //width: "calc((100% / 24) * %s)" % (n)
+  }
+}
+for breakpoint, size in breakpoints {
+  @media (min-width: size) {
+    for n in 1..24 {
+      .col-{breakpoint}-{n} {
+        grid-column: "span %s" % (n)
+        //max-width: "calc(100% / 24 * %s)" % (n)
+      }
+    }
+  }
+}
+
+
+/*.row {
+  display: flex
+  flex-wrap: wrap
+  margin-left: (-30px / 2)
+  margin-right: (-30px / 2)
+}
+
+for n in 1..24 {
+  .col-{n} {
+    flex-basis: "calc(100% / 24 * %s)" % (n)
+    max-width: "calc(100% / 24 * %s)" % (n)
+    padding-left: (30px / 2)
+    padding-right: (30px / 2)
+  }
+}
+
+breakpoints = {
+  'sm': '576px',
+  'md': '768px',
+  'lg': '992px',
+  'xl': '1200px'
+}
+
+for breakpoint, size in breakpoints {
+  @media (min-width: size) {
+    for n in 1..24 {
+      .col-{breakpoint}-{n} {
+        flex-basis: "calc(100% / 24 * %s)" % (n)
+        max-width: "calc(100% / 24 * %s)" % (n)
+      }
+    }
+  }
+}*/

@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true },
+  devtools: {enabled: true},
   experimental: {
     appManifest: false,
   },
@@ -49,6 +49,14 @@ export default defineNuxtConfig({
     },
     head: {
       link: [
+        {
+          rel: 'stylesheet',
+          href: "https://cdn-uicons.flaticon.com/2.2.0/uicons-thin-straight/css/uicons-thin-straight.css"
+        },
+        {
+          rel: 'stylesheet',
+          href: " https://cdn-uicons.flaticon.com/2.2.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
+        }
         // { rel: 'stylesheet', href: '/css/bootstrap-grid.min.css' }
       ],
     },
